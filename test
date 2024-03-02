@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Repository</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-    p {
-      margin-bottom: 10px;
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Basic styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #contact {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Repository</h1>
-  <p>This is a simple HTML page for your GitHub repository. You can customize it further by adding:</p>
-  <ul>
-    <li>A description of your project(s)</li>
-    <li>Links to your other projects or websites</li>
-    <li>Screenshots or images related to your projects</li>
-  </ul>
-  <p>**Note:** This is a basic template and you can modify it to fit your needs.</p>
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form action="https://formspree.io/mpzyqdng" method="POST">
+                <!-- Hidden field for subject -->
+                <input type="hidden" name="_subject" value="Contact request from personal website">
+                <!-- Email input -->
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <!-- Message textarea -->
+                <textarea name="message" placeholder="Type your message" required></textarea>
+                <!-- Submit button -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
